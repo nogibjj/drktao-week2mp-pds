@@ -12,7 +12,7 @@ def denirostats(file):
 
 def denirohist(file):
     df=pd.read_csv(file)
-    plt.hist(df.iloc[:,1],bins=10,edgecolor='black')
+    plt.hist(df.iloc[:,1],bins=[0,10,20,30,40,50,60,70,80,90,100],edgecolor='black')
     plt.title("Rotten Tomatoes Score Distribution of Robert De Niro Movies")
     plt.xlabel("Score")
     plt.ylabel("Frequency")
